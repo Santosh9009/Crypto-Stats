@@ -1,0 +1,51 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+
+# Build output
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+*.pid
+*.pid.lock
+
+# Debug and testing files
+*.swp
+*.swo
+*.swn
+*.swns
+*.tsbuildinfo
+.vscode/
+.DS_Store
+
+# IDE-specific files
+.idea/
+*.iml
+
+# OS-specific files
+Thumbs.db
+*.DS_Store
+
+# Coverage directory (for test results)
+coverage/
+
+# Lint caches
+eslintcache
+
+# Optional npm cache directory
+.npm/
+
+# Yarn Integrity file
+.yarn-integrity
