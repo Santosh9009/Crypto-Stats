@@ -1,7 +1,7 @@
 import express from 'express';
 import 'dotenv/config'
 import connectDB from './config/db';
-import cryptoRoutes from './routes/cryptoRoutes';
+import cryptoRouter from './routes/cryptoRoutes';
 import cron from 'node-cron';
 import { fetchCryptoData } from './jobs/fetchCryptoData';
 
@@ -13,7 +13,7 @@ connectDB();
 app.use(express.json());
 
 
-app.use('/api',cryptoRoutes)
+app.use('/api',cryptoRouter)
 
 app.get('/', (req, res) => {
   res.send('Hello World!');

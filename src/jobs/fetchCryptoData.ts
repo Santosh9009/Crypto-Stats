@@ -19,7 +19,7 @@ export const fetchCryptoData = async () => {
         include_24hr_change: true,
       }
     });
-    console.log(response.data);
+    // console.log(response.data);
 
     const coins:any = response.data; 
     
