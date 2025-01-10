@@ -2,7 +2,7 @@ import axios from "axios";
 import { CryptoSchema } from "../models/Crypto";
 
 const API_KEY = process.env.COINGECKO_API_KEY || "";
-const API = process.env.COINGECKO_API || "";
+const API = process.env.COINGECKO_API_URL || "";
 
 export const fetchCryptoData = async () => {
   const GivenCoins = ["bitcoin", "matic-network", "ethereum"];
@@ -19,7 +19,6 @@ export const fetchCryptoData = async () => {
         include_24hr_change: true,
       }
     });
-    // console.log(response.data);
 
     const coins:any = response.data; 
     

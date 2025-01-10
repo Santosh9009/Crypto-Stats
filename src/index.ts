@@ -19,7 +19,8 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
-cron.schedule('* * * * *', fetchCryptoData);
+// crom-job for fetching data every 2 hours
+cron.schedule('0 */2 * * *', fetchCryptoData);
 
 app.listen(port, ()=>{
   console.log(`Server is running at http://localhost:${port}`);
